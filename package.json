@@ -1,0 +1,16 @@
+{
+  "name": "store-rating-platform",
+  "version": "1.0.0",
+  "description": "A store rating platform with role-based access for Admin, Users, and Store Owners",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "install:all": "cd server && npm install && cd ../client && npm install && npm install",
+    "seed": "cd server && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
